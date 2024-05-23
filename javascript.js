@@ -12,6 +12,12 @@ function makeGrid(gridSize){
             row.style.width = `${960/gridSize}px`
             row.style.height = `${960/gridSize}px`
             row.style.backgroundColor = "pink";
+            if (gridSize < 50){
+                row.style.borderWidth="1px";
+                row.style.borderColor="black";
+                row.style.borderStyle="solid";
+            }
+            
             row.addEventListener('mouseover', ()=>{
                 row.style.backgroundColor = "#f4f4f4";
             });
